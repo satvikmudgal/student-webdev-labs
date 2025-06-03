@@ -7,15 +7,40 @@
     <title>Exercise 06 - Media Queries</title>
     <link rel="stylesheet" href="../_styles/styles.css" />
     <link rel="stylesheet" href="06-media-queries.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
-      <nav>
-        <ul>
-          <li><a href="#">home</a></li>
-          <li><a href="#">parmesan</a></li>
-          <li><a href="#">manchego</a></li>
-        </ul>
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#home">home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#parmesan">parmesan</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#manchego">manchego</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
     </header>
     <section class="main">

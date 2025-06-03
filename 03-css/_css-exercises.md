@@ -42,6 +42,19 @@ nav ul.menu li#first a:not([class='visited']) {
 div ol li ul li ol li ul li a {
 }
 ```
+CSS Specificity is given by: (a, b, c)
+Where:
+a = number of ID selectors
+b = number of class, attribute selectors, and pseudo-classes
+c = number of element and pseudo-element selectors.
+
+1. ```nav .list-item > a {}``` has a specificity of (0, 1, 2)
+2. ```#main::first-letter {}``` has a specificity of (1, 0, 1)
+3. ```input[type] {}``` has a specificity of (0, 1, 1)
+4. ```section .main::first-line {}``` has a specificity of (0, 1, 2)
+5. ```nav ul.menu li#first a:not([class="visited"]) {} ``` has a specificity of (1, 2, 4)
+6. ```div ol li ul li ol li ul li a {}``` has a specificity of (0, 0, 12)
+
 
 ## <a id="ex04"></a> Exercise 04 - Layout
 

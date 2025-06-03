@@ -1,4 +1,5 @@
 /* Specificity Exercise */
+/* This exercise has been solved in the file _css-exercises.md */
 
 nav .list-item > a {
   color: var(--purple);
@@ -16,7 +17,7 @@ section .main::first-line {
   color: var(--purple);
 }
 
-nav ul.menu li#first a:not([class='visited']) {
+nav ul.menu li#first a:not([class="visited"]) {
   color: var(--purple);
 }
 
