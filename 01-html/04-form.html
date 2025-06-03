@@ -5,11 +5,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Exercise 04 - Form</title>
+    <style>
+      ::placeholder {
+        color: darkgray;
+      }
+    </style>
   </head>
   <body>
     <main>
       <form action="/submit">
+        <h1>Form</h1>
         <!-- Add your code here -->
+        <div>
+          <label for="name">Name:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Full Name"
+            required
+          />
+        </div>
+        <div>
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="name@pdx.edu"
+            required
+          />
+        </div>
+        <p></p>
+        <fieldset
+          style="border: 2px darkgray solid; padding: 10px; max-width: 400px"
+        >
+          <legend>Favorite Character:</legend>
+          <div>
+            <input
+              type="radio"
+              id="spongebob"
+              name="character"
+              value="Spongebob"
+              checked
+            />
+            <label for="spongebob">Spongebob</label>
+          </div>
+          <div>
+            <input type="radio" id="sandy" name="character" value="Sandy" />
+            <label for="sandy">Sandy</label>
+          </div>
+          <div>
+            <input type="radio" id="patrick" name="character" value="Patrick" />
+            <label for="patrick">Patrick</label>
+          </div>
+        </fieldset>
+        <p></p>
+        <fieldset
+          style="border: 2px darkgray solid; padding: 10px; max-width: 400px"
+        >
+          <legend>Are you a fan of the show?</legend>
+          <div>
+            <input
+              type="checkbox"
+              id="yes-episodes"
+              name="Yes, all episodes"
+              value="Yes, I have watched all episodes!"
+            />
+            <label for="yes-episodes">Yes, I have watched all episodes!</label>
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              id="yes-memes"
+              name="Yes, all the memes"
+              value="Yes, it's got the best memes."
+            />
+            <label for="yes-memes">Yes, it's got the best memes.</label>
+          </div>
+        </fieldset>
+        <p></p>
+        <button type="submit" class="btn btn-primary w-100">Submit</button>
+        <button type="reset" class="btn btn-secondary w-100">Reset</button>
       </form>
     </main>
   </body>
